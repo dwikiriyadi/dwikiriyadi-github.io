@@ -29,6 +29,7 @@ dependencies:
   dots_indicator: ^1.1.0
   carousel_slider: ^2.1.0
   google_fonts: ^1.1.2
+  url_strategy: ^0.1.1
   flutter:
     sdk: flutter
 
