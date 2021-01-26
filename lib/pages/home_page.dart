@@ -41,6 +41,7 @@ class _HomePageState extends State<HomePage> {
               ],
               developerAccount: [
                 IconButton(
+                    padding: EdgeInsets.symmetric(horizontal: 16),
                     icon:
                         Icon(FontAwesomeIcons.linkedinIn, color: Colors.white),
                     onPressed: () {
@@ -48,6 +49,7 @@ class _HomePageState extends State<HomePage> {
                           "https://www.linkedin.com/in/dwiki-riyadi-a944b66b/");
                     }),
                 IconButton(
+                    padding: EdgeInsets.symmetric(horizontal: 16),
                     icon: Icon(FontAwesomeIcons.github, color: Colors.white),
                     onPressed: () {
                       launch("https://github.com/dwikiriyadi");

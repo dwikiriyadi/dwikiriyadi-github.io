@@ -49,11 +49,15 @@ class _RootState extends State<Root> {
           ]),
           AppBarShortTop(backgroundColor: Colors.white, actions: [
             IconButton(
+                padding: EdgeInsets.symmetric(horizontal: 16),
                 icon: Icon(Icons.menu),
                 onPressed: () {
                   _scaffoldKey.currentState.openDrawer();
                 }),
-            IconButton(icon: Logo(width: 24, height: 24), onPressed: null)
+            IconButton(
+                padding: EdgeInsets.symmetric(horizontal: 16),
+                icon: Logo(width: 24, height: 24),
+                onPressed: null)
           ])
         ]));
   }
