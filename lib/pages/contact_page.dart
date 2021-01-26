@@ -10,9 +10,10 @@ class _ContactPageState extends State<ContactPage> {
   Widget build(BuildContext context) {
     return Container(
         color: Color(0xff323232),
-        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 30),
+        padding: EdgeInsets.symmetric(vertical: 30),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          TextHeader("Get in touch"),
+          TextHeader("Get in touch",
+              padding: EdgeInsets.symmetric(horizontal: 16)),
         ]));
   }
 }

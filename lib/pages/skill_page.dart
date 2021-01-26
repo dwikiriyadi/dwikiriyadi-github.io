@@ -9,9 +9,11 @@ class _SkillPageState extends State<SkillPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 30),
+        padding: EdgeInsets.symmetric(vertical: 30),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          TextHeader("Skill", textColor: Color(0xff212121)),
+          TextHeader("Skill",
+              textColor: Color(0xff212121),
+              padding: EdgeInsets.symmetric(horizontal: 16)),
         ]));
   }
 }

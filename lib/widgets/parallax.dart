@@ -27,21 +27,25 @@ class Parallax extends StatefulWidget {
 class _ParallaxState extends State<Parallax> {
   @override
   Widget build(BuildContext context) {
+    var height = 460 - widget.scrollPosition;
+
     return Stack(children: [
       Container(
           width: widget.width,
-          height: 460 - widget.scrollPosition,
+          height: height,
           padding: widget.contentPadding,
           decoration: BoxDecoration(
               image: DecorationImage(
                   image: widget.image,
                   fit: BoxFit.cover,
                   alignment: Alignment.topLeft)),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: widget.contents,
-          )),
+          child: height > 200
+              ? Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: widget.contents,
+                )
+              : Container()),
       DeveloperShortTop(
         actions: widget.developerAccount,
       )

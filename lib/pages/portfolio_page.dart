@@ -10,9 +10,11 @@ class _PortfolioPageState extends State<PortfolioPage> {
   Widget build(BuildContext context) {
     return Container(
         color: Color(0xffeeeeee),
-        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 30),
+        padding: EdgeInsets.symmetric(vertical: 30),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          TextHeader("Portfolio", textColor: Color(0xff212121)),
+          TextHeader("Portfolio",
+              textColor: Color(0xff212121),
+              padding: EdgeInsets.symmetric(horizontal: 16)),
         ]));
   }
 }
