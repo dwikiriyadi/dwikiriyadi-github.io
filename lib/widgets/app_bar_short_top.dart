@@ -31,10 +31,7 @@ class _AppBarShortTopState extends State<AppBarShortTop> {
                         itemCount: widget.actions.length,
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (BuildContext context, int index) {
-                          return Container(
-                            padding: EdgeInsets.symmetric(horizontal: 8),
-                            child: widget.actions[index]
-                          );
+                          return widget.actions[index];
                         })))));
   }
 }
