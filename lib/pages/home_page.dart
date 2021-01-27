@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
           Parallax(
               width: double.infinity,
               height: 460,
-              image: Image(image: AssetImage('assets/mobile_image.png')).image,
+              image: 'assets/mobile_image.png',
               scrollPosition: widget.scrollPosition,
               contentPadding: EdgeInsets.all(16),
               contents: [

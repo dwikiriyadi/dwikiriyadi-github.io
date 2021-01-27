@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class Parallax extends StatefulWidget {
   final double height;
   final double width;
-  final ImageProvider image;
+  final String image;
   final double scrollPosition;
   final List<IconButton> developerAccount;
   final List<Widget> contents;
@@ -32,11 +32,11 @@ class _ParallaxState extends State<Parallax> {
     return Stack(children: [
       Container(
           width: widget.width,
-          height: height,
+          height: height < 0 ? 0 : height,
           padding: widget.contentPadding,
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: widget.image,
+                  image: Image(image: AssetImage(widget.image)).image,
                   fit: BoxFit.cover,
                   alignment: Alignment.topLeft)),
           child: height > 200

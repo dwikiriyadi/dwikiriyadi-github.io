@@ -23,19 +23,19 @@ class _EducationPageState extends State<EducationPage> {
     },
     {
       'level': "Vocational High School",
-      'place': "SMKN 4 Pontianak",
+      'place': "SMK Negeri 4 Pontianak",
       'department': "Mechanical Engineering",
       'generation': "July 2011 - June 2014"
     },
     {
       'level': "Junior High School",
-      'place': "SMPN 16 Pontianak",
+      'place': "SMP Negeri 16 Pontianak",
       'department': null,
       'generation': "July 2008 - June 2011"
     },
     {
       'level': "Elementary School",
-      'place': "SDN 09 Pontianak",
+      'place': "SD Negeri 09 Pontianak",
       'department': null,
       'generation': "July 2002 - June 2008"
     },
